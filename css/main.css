@@ -143,8 +143,15 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+	color: white;
+    
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  padding: 1rem;
+	  background-color: #efefef;
+	  text-align: center;
 }
 
 /* ===============
