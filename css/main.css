@@ -76,15 +76,12 @@ body {
 
 .footer-container
 {
-	border-top: 20px solid #e44d26;
-    border-bottom: 20px solid #e44d26;
-	position:fixed;
-    height:50px;
-    background-color:f16529;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    margin-bottom:0px;
+	clear:left;
+position:fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
 }
 .main aside {
     border-top: 20px solid #e44d26;
@@ -402,3 +399,56 @@ position:fixed;
         page-break-after: avoid;
     }
 }
+
+
+
+
+
+.container .content {
+    display: none;
+    padding : 5px;
+}
+
+.container .header:hover{
+	background-color: grey;
+	
+}
+.content {
+	 float: left;
+        width: 75%;
+		
+}
+
+.container  > .header 
+{
+
+	display:block;
+	border-style:solid;
+	border-color:#bbb #888 #666 #aaa;
+	border-width:3px 4px 4px 3px;
+	
+	background:#ccc;
+	color:#333;
+	line-height:2;
+	text-decoration:none;
+	font-weight:900;
+}
+.container:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+.container:after {
+    background: #90EE90;
+    display: block;
+    margin-left: -20px!important;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.main-container(
+ min-height: calc(100vh - 40px);
+ height:100%;
+ position: relative;
+)
